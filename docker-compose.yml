@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  nexuiz-server:
+    image: nexuiz-server
+    container_name: nexuiz-server
+    ports:
+      - "26000:26000/udp"
+    volumes:
+      - ./server.cfg:/usr/share/games/nexuiz/data/server.cfg
